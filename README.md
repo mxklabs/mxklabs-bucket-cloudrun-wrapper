@@ -1,6 +1,10 @@
 # mxklabs-bucket-cloudrun-wrapper
 
-The code in this repository is designed to run on Google's [Cloud Run](https://cloud.google.com/compute/cloud-run) service to serve a static website using a [Cloud Storage bucket](https://cloud.google.com/storage/) as the back-end file store. Google have their own [tutorial](https://cloud.google.com/storage/docs/hosting-static-website) for as to how to configure a bucket to host a static website but, as it turns out, this requires setting up two load balancers and reserving an IP address, amounting to a non-insignificant cost per month. In contrast, Cloud Run is essentially zero scale and hence using this solution will cost you a few pennies if your website is low traffic.
+ℹ️: | Google have their own [tutorial](https://cloud.google.com/storage/docs/hosting-static-website) describing how you can configure a Google Storage bucket to host a static website but, as it turns out, this solution uses two load balancers and reserving an IP address, amounting to a significant monthly cost. In contrast, Cloud Run is zero scale and hence using this solution will have minimal cost for a low traffic web site.
+:---: | :---
+
+
+The code in this repository is designed to run on Google Cloud's [Cloud Run](https://cloud.google.com/compute/cloud-run) service, serving a static website using a [Cloud Storage Bucket](https://cloud.google.com/storage/) as the back-end. 
 
 
 
