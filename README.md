@@ -75,7 +75,7 @@ The instructions below assume `$MY_PROJECT` is your Google Cloud Project name an
 
 ## Local Development
 
-The instructions below assume `$MY_BUCKET` is your bucket name and your key file is downloaded into `$KEY_FILE`. We also assume your current working directory is your clone of this git repository.
+Local development still uses the Cloud Storage Bucket to serve files. The instructions below assume `$MY_BUCKET` is your bucket name and your key file is downloaded into `$KEY_FILE`. We also assume your current working directory is your clone of this git repository.
 
 * Install Python 3.7 (more info [here](https://www.python.org/downloads/)).
 * Install pip dependencies (preferably in a virtual env):
@@ -85,9 +85,9 @@ The instructions below assume `$MY_BUCKET` is your bucket name and your key file
 * Create a service account and download a new JSON key file (more info [here](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-python)).
 * Run the app:
   ```
-  GOOGLE_APPLICATION_CREDENTIALS=KEY_FILE BUCKET_NAME=$MY_BUCKET python main.py
+  GOOGLE_APPLICATION_CREDENTIALS=$KEY_FILE BUCKET_NAME=$MY_BUCKET python main.py
   ```
-  where 
+* Open `http://0.0.0.0:8080` in your favorite browser to see the result.
 
 Create service account: https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-python
 
