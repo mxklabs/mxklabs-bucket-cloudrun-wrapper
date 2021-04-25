@@ -3,10 +3,17 @@
 ℹ️: | Google have their own [tutorial](https://cloud.google.com/storage/docs/hosting-static-website) describing how you can configure a Google Storage bucket to host a static website but, as it turns out, this solution uses two load balancers and reserving an IP address, amounting to a significant monthly cost. In contrast, Cloud Run is zero scale and hence using this solution will have minimal cost for a low traffic web site.
 :---: | :---
 
+The code in this repository is designed to host a static web site run on [Cloud Run](https://cloud.google.com/compute/cloud-run), serving files as stored in a [Storage Bucket](https://cloud.google.com/storage/).
 
-The code in this repository is designed to run on Google Cloud's [Cloud Run](https://cloud.google.com/compute/cloud-run) service, serving a static website using a [Cloud Storage Bucket](https://cloud.google.com/storage/) as the back-end. 
+## Deploy on Google Cloud
+
+#### 
+
+#### Optional Environment Variables
 
 
+
+## Development
 
 Create service account: https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-python
 
