@@ -92,7 +92,7 @@ In these steps we will deploy the Docker Container to [Cloud Run](https://cloud.
   ```
 * The previous command will output some DNS records that you have to set on your domain for the domain mapping to work. Set the DNS records as instructed using your domain registrar service (e.g. [Google Domains](https://domains.google.com/) or similar).
 
-#### Notes on Development Environment
+#### Notes for Developers
 
 You can run the `main.py` script locally for testing purposes. However, unlike when running on [Cloud Run](https://cloud.google.com/compute/cloud-run), authentication is not automatic.
 
