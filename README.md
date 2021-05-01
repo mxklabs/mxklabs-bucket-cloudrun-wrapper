@@ -1,6 +1,6 @@
 ### Summary
 
-This repository enables you to host a static web site from a [Cloud Storage Bucket](https://cloud.google.com/storage/) using [Cloud Run](https://cloud.google.com/compute/cloud-run) and Google APIs. It is an alternative to the "[Hosting a static website]([tutorials](https://cloud.google.com/storage/docs/hosting-static-website))" method described by Google.
+This repository enables you to host a static web site from a [Cloud Storage Bucket](https://cloud.google.com/storage/) using [Cloud Run](https://cloud.google.com/compute/cloud-run) and Google APIs. It is an alternative to the "Hosting a static website" method as described by Google on [this page](https://cloud.google.com/storage/docs/hosting-static-website).
 
 If your website is relatively low-traffic and the files in your bucket are not obscenely large, this repository offers a very cost-effective way of hosting a static web site. I generally pay less than £0.10/month in [Cloud Run](https://cloud.google.com/compute/cloud-run) and [Cloud Bucket](https://cloud.google.com/storage/docs/creating-buckets) costs. In contrast, hosting a static website using the method explained in Google's own guide will set you back the cost of two load balancers and an IP address reservation which, in my experiments, totals at about £15/month. There is no need to pay for load balancers or IP address reservations when you use [Cloud Run](https://cloud.google.com/compute/cloud-run).
 
