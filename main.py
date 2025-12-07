@@ -34,6 +34,10 @@ class WrapperServer(BaseHTTPRequestHandler):
         # Remove forward slash.
         path = path[1:]
 
+      if path.endswith('/'):
+        # Add index.html.
+        path = path[:-1] + home_page
+
       # Get the corresponding file from the Cloud Bucket.
       content_type, result = self.get_file_from_bucket(bucket_name, path)
 
